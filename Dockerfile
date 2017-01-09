@@ -7,3 +7,5 @@ ENV K8SVERSION=v1.5.1
 ADD ${BASEURL}/${K8SVERSION}/${ARCHPATH}/kube-apiserver /usr/bin/
 ADD ${BASEURL}/${K8SVERSION}/${ARCHPATH}/kube-controller-manager /usr/bin/
 ADD ${BASEURL}/${K8SVERSION}/${ARCHPATH}/kube-scheduler /usr/bin/
+
+RUN chmod +x /usr/bin/kube*
