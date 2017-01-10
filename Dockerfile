@@ -10,3 +10,4 @@ ADD ${BASEURL}/${K8SVERSION}/${ARCHPATH}/kube-proxy /usr/bin/
 ADD ${BASEURL}/${K8SVERSION}/${ARCHPATH}/kube-scheduler /usr/bin/
 
 RUN chmod +x /usr/bin/kube*
+RUN apk add -U iptables 
